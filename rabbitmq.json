@@ -1,0 +1,16 @@
+{
+  "name": "rabbitmq",
+  "environment": "_default",
+  "chef_environment": "_default",
+  "run_list": [
+    "recipe[chef-solo-search]",
+    "recipe[bjn_rabbitmq]"
+  ],
+  "automatic": {
+    "os": "linux",
+    "ipaddress": "10.10.10.14",
+    "hostname": "rabbitmq",
+    "network": {
+    }
+  }
+}
